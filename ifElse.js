@@ -33,3 +33,13 @@ function login2(user) {
 const status = isActive ? "Online" : "Offline";
 
 // just remember don't nest ternary operators
+
+// Switch statement : switch statement uses === internally
+
+const x = "3";
+
+switch (x) {
+  case 5: // This will NOT run (string "5" !== number 5)
+    console.log("Match");
+    break;
+}
