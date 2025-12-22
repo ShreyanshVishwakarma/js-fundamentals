@@ -1,9 +1,9 @@
 // I realized that i dont actually know the diff bw var ,let and const. really ?
 
 function testvar() {
-  for (var i = 0; i < 10; i++) {
-    console.log(`${i} `);
-    var rand = 23;
+  for (var i = 0; i < 5; i++) {
+    process.stdout.write(`${i} `);
+    var rand = "declared inside loop";
   }
   //trying to access i outside the loop
   console.log(i + 1);
@@ -16,7 +16,7 @@ testvar(); // things decalred inside the loop are accessible outside the loop
 
 // this function should give an error
 function testlet() {
-  for (let i = 0; i < 3; i++) {
+  for (let i = 0; i < 10; i++) {
     console.log(i);
     var rand = 23;
   }
